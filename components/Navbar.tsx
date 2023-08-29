@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='flex justify-between items-center fixed top-0 w-full p-10 z-50'>
+    <div className='flex justify-between items-center bg-black z-50 fixed top-0 w-full p-10 z-50'>
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
         src={LogoBlack}

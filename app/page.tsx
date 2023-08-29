@@ -3,13 +3,15 @@ import SubtitleSection from '@/components/SubtitleSection'
 import Image from 'next/image'
 import HeroImage from '../public/DesyncHero.png'
 import ToolsSection from '@/components/ToolsSection'
+import DigitalEcosystemSection from '@/components/DigitalEcosystemSection'
+import MicroservicesSection from '@/components/MicroservicesSection'
 
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
 
-        <Navbar/>
+        {/* <Navbar/> */}
       <div className='flex items-center justify-center min-h-screen z-10'>
           <h1 className='font-serif  mx-6 text-7xl lg:text-8xl text-[#EEEEEE]'>Your Digital Ecosystem</h1>
       </div>
@@ -28,6 +30,10 @@ export default function Home() {
       <SubtitleSection />
 
       <ToolsSection/>
+
+      <DigitalEcosystemSection/>
+
+      <MicroservicesSection />
       
     </main>
   )

@@ -1,6 +1,8 @@
+import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Ubuntu, Averia_Serif_Libre } from 'next/font/google'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 const ubuntu = Ubuntu({ subsets: ['latin'], weight: ['400', '500', '700'] })
@@ -18,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.className} ${averia.className}`}>{children}</body>
+      <body className={`${ubuntu.className} ${averia.className}`}>
+        <Navbar />
+        {children}
+        <Footer/>
+        </body>
     </html>
   )
 }

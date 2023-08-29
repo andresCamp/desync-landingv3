@@ -5,7 +5,7 @@ const ToolsSection = () => {
   return (
     <div className="my-32 relative">
 
-      <div className="p-4 md:px-8 w-full sm:w-max bg-black flex items-center justify-center absolute top-1/2 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2 ring-8 ring-opacity-75 ring-white rounded-md">
+      <div className="p-4 md:px-8 w-full sm:w-max bg-black flex items-center justify-center absolute top-1/2 left-1/2 z-40 transform -translate-x-1/2 -translate-y-1/2 ring-8 ring-opacity-75 ring-white rounded-md">
         <h3 className="text-xl md:text-2xl lg:text-4xl text-blue-400">
           We&apos;ve tested hundreds of tools so you dont have to.
         </h3>
