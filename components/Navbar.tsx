@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
-import LogoBlack from '../public/Desync-Black.svg';
+import LogoBlack from '../public/desync-logo-white.png';
 import Image from 'next/image';
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center fixed top-0 w-full p-10 z-50'>
       <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
         src={LogoBlack}
         alt="Next.js Logo"
         width={180}
@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       {/* Normal menu for larger screens */}
-      <div className='hidden lg:flex justify-items-center gap-4 text-center text-[#373737] dark:invert'>
+      <div className='hidden font-sans lg:flex justify-items-center gap-4 text-center text-[#373737] dark:invert'>
         <p>microservices</p>
         <p>digital ecosystem</p>
         <p>blog</p>

@@ -1,6 +1,9 @@
 import Navbar from '@/components/Navbar'
+import SubtitleSection from '@/components/SubtitleSection'
 import Image from 'next/image'
 import HeroImage from '../public/DesyncHero.png'
+import ToolsSection from '@/components/ToolsSection'
+
 
 export default function Home() {
   return (
@@ -8,12 +11,12 @@ export default function Home() {
 
         <Navbar/>
       <div className='flex items-center justify-center min-h-screen z-10'>
-          <h1 className='font-serif text-4xl md:text-7xl lg:text-8xl text-[#373737] dark:invert'>Your Digital Ecosystem</h1>
+          <h1 className='font-serif  mx-6 text-7xl lg:text-8xl text-[#EEEEEE]'>Your Digital Ecosystem</h1>
       </div>
       
       <div className="absolute inset-0 flex justify-center items-center z-0 overflow-hidden">
         <Image
-          className="relative animate-spin-slow mt-[400px] md:ml-[550px] md:mt-[300px] lg:ml-[800px] "
+          className="relative animate-spin-slow mt-[400px] md:ml-[550px] md:mt-[300px] lg:ml-[800px] z-50"
           src={HeroImage}
           alt="Digital Ecosystem"
           width={1000}
@@ -21,6 +24,10 @@ export default function Home() {
           priority
         />
       </div>
+
+      <SubtitleSection />
+
+      <ToolsSection/>
       
     </main>
   )
