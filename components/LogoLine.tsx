@@ -37,7 +37,7 @@ const LogoLine: React.FC<LogoLineTypes> = ({start, end}) => {
 
   return (
     <Marquee>
-      <div className='flex gap-3'>
+      <div className="flex gap-3">
         {images}
       </div>
     </Marquee>
