@@ -23,6 +23,7 @@ const LogoLine: React.FC<LogoLineTypes> = ({start, end}) => {
       <div key={num} className="h-auto w-auto"> {/* Fixed height and width */}
         <img
           src={imagePath}
+          alt={`landing logo ${num}`}
         />
         {/* <Image
           src={imagePath}
