@@ -33,7 +33,7 @@ const particlesConfig = {
         enable: true,
         out_mode: "out",
         random: false,
-        speed: 2,
+        speed: 1.25,
         straight: false
       },
       number: { density: { enable: true, value_area: 1000 }, value: 60 },
