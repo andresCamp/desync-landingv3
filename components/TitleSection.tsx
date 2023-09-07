@@ -10,7 +10,7 @@ const TitleSection = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2 }}
         >
-        Step into an era where AI reshapes the boundaries of what's possible.
+        Step into an era where AI reshapes the boundaries of what&apos;s possible.
         </motion.h1>
         
         <motion.h1 className='text-6xl w-3/4' 
@@ -18,7 +18,7 @@ const TitleSection = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2 }}
         >
-        With us, your ambition isn't just an aspiration—it's your greatest capital. 
+        With us, your ambition isn&apos;t just an aspiration—it&apos;s your greatest capital. 
         </motion.h1>
 
         <motion.h1 className='text-6xl w-3/4' 
@@ -26,7 +26,7 @@ const TitleSection = () => {
            whileInView={{ opacity: 1 }}
            transition={{ duration: 2 }}
         >
-          We're not just implementing technology; we're leveling the playing field for every organization.
+          We&apos;re not just implementing technology; we&apos;re leveling the playing field for every organization.
         </motion.h1>
 
         {/* <motion.div 
