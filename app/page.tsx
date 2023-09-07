@@ -1,3 +1,4 @@
+'use client'
 import Navbar from '@/components/Navbar'
 import SubtitleSection from '@/components/SubtitleSection'
 import Image from 'next/image'
@@ -5,40 +6,68 @@ import HeroImage from '../public/DesyncHero.png'
 import ToolsSection from '@/components/ToolsSection'
 import DigitalEcosystemSection from '@/components/DigitalEcosystemSection'
 import MicroservicesSection from '@/components/MicroservicesSection'
+import FormsparkEmailCapture from '@/components/FormsparkEmailCapture'
+import ParticlesContainer from '@/components/ParticlesContainer'
+import HeroSection from '@/components/HeroSection'
+import TitleSection from '@/components/TitleSection'
+import { motion, useScroll} from "framer-motion"
+import { useRef } from 'react'
 
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+  const scrollRef = useRef(null)
+
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center justify-center ">
 
-        {/* <Navbar/> */}
-      <div className='flex items-center justify-center min-h-screen z-10'>
-          <h1 className='font-serif  mx-6 text-7xl lg:text-8xl text-[#EEEEEE]'>Your Digital Ecosystem</h1>
-      </div>
-      
-      <div className="absolute inset-0 flex justify-center items-center z-0 overflow-hidden">
-        <Image
-          className="relative animate-spin-slow mt-[400px] md:ml-[550px] md:mt-[300px] lg:ml-[800px] z-50"
-          src={HeroImage}
-          alt="Digital Ecosystem"
-          width={1000}
-          height={666.11}
-          priority
-        />
-      </div>
 
-      <SubtitleSection />
+      {/* <motion.div animate={{ x: 100 }} /> */}
 
-      <ToolsSection/>
+      {/* <h1 className='${ubuntu.className}'>TEST</h1> */}
+      <HeroSection />
 
-      <DigitalEcosystemSection/>
+      <TitleSection />
 
-      <MicroservicesSection />
-      
+      <div ref={scrollRef} style={{ overflow: "scroll" }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ root: scrollRef }}
+      />
+      TIMMY!
+    </div>
+
+
+
     </main>
   )
 }
 
+{/* <Navbar/>
+<div className='flex items-center justify-center min-h-screen z-10'>
+  <h1 className='font-serif  mx-6 text-7xl lg:text-8xl text-[#EEEEEE]'>Your Digital Ecosystem</h1>
+</div>
+
+<div className="absolute inset-0 flex justify-center items-center z-0 overflow-hidden">
+<Image
+  className="relative animate-spin-slow mt-[400px] md:ml-[550px] md:mt-[300px] lg:ml-[800px] z-50"
+  src={HeroImage}
+  alt="Digital Ecosystem"
+  width={1000}
+  height={666.11}
+  priority
+/>
+</div>
+
+<SubtitleSection />
+
+<ToolsSection/>
+
+<DigitalEcosystemSection/>
+
+<MicroservicesSection /> */}
 
 
 

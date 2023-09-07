@@ -5,14 +5,14 @@ import FooterSection from './FooterSection'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col gap-8 justify-center items-center'>
+    <div className='flex flex-col gap-8 justify-center items-center z-50'>
         <div className='p-8 gap-16 flex flex-row justify-center items-start'>
             <div className='w-1/5 text-sm'>
                 <Image
                     src={logo}
                     alt='desycn logo'
                 />
-                <p className='font-sans font-light'>
+                <p className='text-slate-300 font-thin'>
                 Enter a World of Digital Ecosystems: AI-Driven Solutions to Fuel Your Success. Curiosity Meets Innovation. A World Where Visionaries Thrive.
     Intrigued by What&apos;s Possible?
                 </p>

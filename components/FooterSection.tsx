@@ -8,12 +8,12 @@ interface FooterSectionProps {
 const FooterSection: React.FC<FooterSectionProps> = ({title, options}) => {
   
     const footerOptions = options.map((option, index) => (
-        <p className="font-sans font-light" key={index}>{option}</p>
+        <p className="font-light text-slate-500" key={index}>{option}</p>
     ))
 
     return (
     <div className='flex flex-col gap-3'>
-      <h3 className='text-xl text-slate-700'>{title}</h3>
+      <h1 className='text-xl text-slate-300'>{title}</h1>
       {footerOptions}
     </div>
   )

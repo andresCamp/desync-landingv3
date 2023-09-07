@@ -8,6 +8,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
+  --gradient: linear-gradient(125deg, #89F7FE, #66A6FF);
+  /* --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352); */
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;
@@ -32,3 +34,38 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+html {
+  font-family: var(--font-ubuntu);
+}
+
+h1 {
+  font-family: var(--font-averia-serif-libre);
+}
+
+.testBg {
+  color: blue;
+}
+
+.tiertaryBg {
+  /* font-size: 1.125em; */
+  line-height: 1.6;
+  color: #333;
+  background: #0067f8;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite;
+  transition: filter 1.5s ease;
+}
+.tiertaryBg:hover {
+  filter: hue-rotate(180deg);
+}
+
+
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+

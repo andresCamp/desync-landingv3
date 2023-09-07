@@ -7,12 +7,8 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    textColor: {
+    color: {
       primary: '#373737', // Define the default text color here
-    },
-    fontFamily: {
-      sans: ['Ubuntu', 'sans-serif'], // Ubuntu default
-      averia: ['Averia Serif Libre', 'serif'], // Averia for utility class
     },
     fontSize: {
       'xs': '.75rem',     // 12px
