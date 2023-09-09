@@ -1,22 +1,87 @@
 'use client'
-import React from 'react'
-import {motion} from "framer-motion"
+import React, { useEffect, useRef } from 'react'
+import {motion, useAnimation, useInView, useMotionValueEvent, useScroll} from "framer-motion"
 
 const TitleSection = () => {
+
+    const ref = useRef<HTMLHeadingElement>(null)
+    const isInView = useInView(ref, {once: true})
+
+    const mainControls = useAnimation()
+
+    useEffect(()=> {
+        if (isInView){
+            mainControls.start("visible")
+        }
+    }, [isInView])
+
+    const { scrollY } = useScroll()
+
+    // useMotionValueEvent(scrollY, "change", (latest) => {
+    // console.log("Page scroll: ", latest)
+    // })
+
+
+    // const { scrollYProgress} = useScroll({
+    //     target: ref,
+    //     offset: ["0 1" ,"1 0"]
+    // })
+
   return (
-    <div>
-        <motion.h1 className='text-6xl w-3/4' 
+    <div className='mt-36'>
+       
+       <motion.h1 className='text-6xl w-full' 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1, delay: 0.25 }}
+            
+        >
+            Step into an era where AI reshapes the boundaries of what&apos;s possible. 
+            
+         </motion.h1>
+       {/* <motion.h1 className='text-6xl w-full' 
+            ref={ref} 
+            variants={{
+                hidden: {opacity: 0},
+                visible: {opacity: 1},
+                again: {opacity: 0},
+
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.25}}
+            
+        >
+            Step into an era where AI reshapes the boundaries of what&apos;s possible. 
+            
+         </motion.h1> */}
+
+{/*        
+        <motion.h1 className='text-6xl w-3/4' 
+            ref={ref} 
+            variants={{
+                hidden: {opacity: 0},
+                visible: {opacity: 1},
+
+            }}
         >
         Step into an era where AI reshapes the boundaries of what&apos;s possible.
-        </motion.h1>
+        </motion.h1> */}
+
+        {/* <motion.h1 className='text-6xl w-3/4' 
+            ref={ref} 
+            style={{
+                // scale: scrollYProgress,
+                opacity: scrollYProgress
+            }}
+        >
+        Step into an era where AI reshapes the boundaries of what&apos;s possible.
+        </motion.h1> */}
         
         <motion.h1 className='text-6xl w-3/4' 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1, delay: 0.25 }}
         >
         With us, your ambition isn&apos;t just an aspiration—it&apos;s your greatest capital. 
         </motion.h1>
@@ -24,7 +89,7 @@ const TitleSection = () => {
         <motion.h1 className='text-6xl w-3/4' 
            initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
-           transition={{ duration: 2 }}
+           transition={{ duration: 2, delay: 0.25 }}
         >
           We&apos;re not just implementing technology; we&apos;re leveling the playing field for every organization.
         </motion.h1>

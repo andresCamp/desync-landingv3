@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection {
+  background: #dddddd;
+  color: #121212;
+}
+::-webkit-selection {
+  background: #dddddd;
+  color: #121212;
+}
 
+
+::selection {
+  background: #dddddd;
+  color: #121212;
+}
 
 :root {
   --foreground-rgb: 255, 255, 255;

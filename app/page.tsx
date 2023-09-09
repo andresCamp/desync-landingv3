@@ -1,4 +1,3 @@
-'use client'
 import Navbar from '@/components/Navbar'
 import SubtitleSection from '@/components/SubtitleSection'
 import Image from 'next/image'
@@ -10,13 +9,13 @@ import FormsparkEmailCapture from '@/components/FormsparkEmailCapture'
 import ParticlesContainer from '@/components/ParticlesContainer'
 import HeroSection from '@/components/HeroSection'
 import TitleSection from '@/components/TitleSection'
-import { motion, useScroll} from "framer-motion"
-import { useRef } from 'react'
+import TitleSection2 from '@/components/TitleSection2'
+import TitleSection3 from '@/components/TitleSection3'
+
 
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
-  const scrollRef = useRef(null)
+
 
   
   return (
@@ -26,18 +25,18 @@ export default function Home() {
       {/* <motion.div animate={{ x: 100 }} /> */}
 
       {/* <h1 className='${ubuntu.className}'>TEST</h1> */}
+      
       <HeroSection />
 
-      <TitleSection />
+      <TitleSection3 />
 
-      <div ref={scrollRef} style={{ overflow: "scroll" }}>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ root: scrollRef }}
-      />
-      TIMMY!
-    </div>
+      <ToolsSection />
+
+      {/* <TitleSection /> */}
+
+      <div className='h-screen'></div>
+      
+   
 
 
 

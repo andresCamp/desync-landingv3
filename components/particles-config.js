@@ -8,13 +8,13 @@ const particlesConfig = {
         onhover: {
           enable: true,
           mode: "attract",
-          parallax: { enable: false, force: 60, smooth: 10 }
+          parallax: { enable: false, force: 75, smooth: 10 }
         },
         resize: true
       },
       modes: {
         push: { quantity: 4 },
-        attract: { distance: 200, duration: 0.4, factor: 12 }
+        attract: { distance: 300, duration: 0.4, factor: 11 }
       }
     },
     particles: {
@@ -33,7 +33,7 @@ const particlesConfig = {
         enable: true,
         out_mode: "out",
         random: false,
-        speed: 1.25,
+        speed: 1.5,
         straight: false
       },
       number: { density: { enable: true, value_area: 1000 }, value: 60 },
