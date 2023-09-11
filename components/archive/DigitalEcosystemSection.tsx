@@ -1,7 +1,7 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
 import logo from '../public/homeLogos/desyncLandingLogo9.png'
-import GetStartedButton from './buttons/GetStartedButton'
+import GetStartedButton from '../buttons/GetStartedButton'
 
 const DigitalEcosystemSection = () => {
   return (

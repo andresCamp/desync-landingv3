@@ -1,5 +1,5 @@
 import React from 'react'
-import GetStartedButton from './buttons/GetStartedButton'
+import GetStartedButton from '../buttons/GetStartedButton'
 
 const SubitleSection = () => {
   return (

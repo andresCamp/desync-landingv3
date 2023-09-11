@@ -3,6 +3,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Ubuntu, Averia_Serif_Libre } from 'next/font/google'
 import Footer from '@/components/Footer'
+import { NextUIProvider } from '@nextui-org/react'
+import Providers from './providers'
 
 // const inter = Inter({ subsets: ['latin'] })
 const ubuntu = Ubuntu({ subsets: ['latin'], variable:'--font-ubuntu', weight: ['300', '400', '500', '700'] })
@@ -34,11 +36,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ubuntu.variable} ${averia.variable}`}>
-      <body >
-        <Navbar />
-        {children}
-        <Footer/>
-      </body>
+        <body >
+      <Providers>
+          <Navbar />
+          {children}
+          <Footer/>
+      </Providers>
+        </body>
     </html>
   )
 }

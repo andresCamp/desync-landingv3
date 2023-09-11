@@ -1,11 +1,10 @@
 'use client'
 import React, { useRef } from 'react'
 import FormsparkEmailCapture from './FormsparkEmailCapture'
-import ParticlesContainer from './ParticlesContainer'
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import ParticlesContainer from '../ParticlesContainer'
+import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion'
 
 const HeroSection = () => {
-    const { scrollY } = useScroll()
     const ref = useRef<HTMLElement>(null)
     const { scrollYProgress} = useScroll({
         target: ref,
@@ -13,12 +12,16 @@ const HeroSection = () => {
     })
 
 
+    const sacleProgress = useTransform(scrollYProgress, [1 , 0], [1, 0.25])
+    const opacityProgress = useTransform(scrollYProgress, [1 , 0], [1, 0])
+
+
   return (
     <motion.section 
         ref={ref} 
         style={{
-            scale: scrollYProgress,
-            opacity: scrollYProgress
+            scale: sacleProgress,
+            opacity: opacityProgress
         }}
         className='  flex min-h-screen flex-col gap-8 items-center justify-center '>
         

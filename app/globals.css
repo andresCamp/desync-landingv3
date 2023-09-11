@@ -11,6 +11,10 @@
   color: #121212;
 }
 
+input, textarea {
+    caret-color: white;
+}
+
 
 ::selection {
   background: #dddddd;
@@ -24,19 +28,21 @@
   --gradient: linear-gradient(125deg, #89F7FE, #66A6FF);
   /* --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352); */
 }
-/* :root {
+ /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+  --gradient: linear-gradient(125deg, #89F7FE, #66A6FF);
+
   }
-} */
+} 
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -74,6 +80,36 @@ h1 {
   filter: hue-rotate(180deg);
 }
 
+
+.calendly-badge-widget .calendly-badge-content {
+  font-size: 1.2em !important;
+  padding: 12px 24px !important;
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  line-height: 1.6;
+  color: #333;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite;
+  transition: filter 1.5s ease;
+}
+
+.calendly-badge-widget .calendly-badge-content:hover {
+  filter: hue-rotate(180deg);
+}
+
+.calendly-overlay .calendly-popup {
+  background: transparent !important;
+}
+
+.calendly-overlay .calendly-popup .calendly-popup-content {
+  box-shadow: none !important;
+}
+
+.calendly-popup .calendly-popup-content {
+  background: transparent !important;
+}
 
 
 @keyframes bg-animation {

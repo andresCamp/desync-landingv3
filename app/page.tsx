@@ -1,16 +1,22 @@
 import Navbar from '@/components/Navbar'
-import SubtitleSection from '@/components/SubtitleSection'
+import SubtitleSection from '@/components/hero/SubtitleSection'
 import Image from 'next/image'
 import HeroImage from '../public/DesyncHero.png'
 import ToolsSection from '@/components/ToolsSection'
-import DigitalEcosystemSection from '@/components/DigitalEcosystemSection'
-import MicroservicesSection from '@/components/MicroservicesSection'
-import FormsparkEmailCapture from '@/components/FormsparkEmailCapture'
+import ToolsSection2 from '@/components/ToolsSection2'
+import ToolsSection3 from '@/components/ToolsSection3'
+import DigitalEcosystemSection from '@/components/archive/DigitalEcosystemSection'
+import MicroservicesSection from '@/components/archive/MicroservicesSection'
+import FormsparkEmailCapture from '@/components/hero/FormsparkEmailCapture'
 import ParticlesContainer from '@/components/ParticlesContainer'
-import HeroSection from '@/components/HeroSection'
-import TitleSection from '@/components/TitleSection'
-import TitleSection2 from '@/components/TitleSection2'
-import TitleSection3 from '@/components/TitleSection3'
+import HeroSection from '@/components/hero/HeroSection'
+import TitleSection from '@/components/archive/TitleSection'
+import TitleSection2 from '@/components/archive/TitleSection2'
+import TitleSection3 from '@/components/headline/TitleSection3'
+import ServicesSection from '@/components/services/ServicesSection'
+import ServiceTest from '@/components/services/ServiceTest'
+import ServiceTest2 from '@/components/services/ServiceTest2'
+import CalendlyWidget from '@/components/CalendlyWidget'
 
 
 
@@ -30,13 +36,17 @@ export default function Home() {
 
       <TitleSection3 />
 
-      <ToolsSection />
+      <ToolsSection3 />
+
+      {/* <ToolsSection /> */}
 
       {/* <TitleSection /> */}
 
-      <div className='h-screen'></div>
+      <ServicesSection />
+
+      {/* <ServiceTest2 /> */}
       
-   
+      <CalendlyWidget />
 
 
 

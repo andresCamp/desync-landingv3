@@ -9,7 +9,7 @@ type Props = {
 
 const TitleLine: React.FC<Props> = ({title, id}) => {    
     const ref = useRef<HTMLElement>(null)
-    const isInView = useInView(ref, {margin: "-55% 0px -25% 0px"})
+    const isInView = useInView(ref, {margin: "-65% 0px -35% 0px"})
 
     const [isInit, setIsInit] = useState(id==="1")
 

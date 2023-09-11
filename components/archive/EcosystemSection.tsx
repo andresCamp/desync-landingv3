@@ -1,6 +1,6 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
-import GetStartedButton from './buttons/GetStartedButton'
+import GetStartedButton from '../buttons/GetStartedButton'
 
 const EcosystemSection = () => {
   return (

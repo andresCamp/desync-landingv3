@@ -2,6 +2,8 @@
 import { useRef, useEffect, Children, useState } from "react";
 import { motion, useAnimation, useInView, useMotionValueEvent, useScroll } from "framer-motion";
 import TitleLine from "./TitleLine";
+import Image from "next/image";
+import waves from "../../public/waves.svg"
 
 const sentences = [
     {
@@ -23,37 +25,22 @@ const sentences = [
 
 const TitleSection3: React.FC = () => {
     const ref = useRef<HTMLElement>(null)
-    const isInView = useInView(ref, {margin: "-75% 0px -75% 0px"})
-    const [isWhite, setIsWhite] = useState(true)
+    // const isInView = useInView(ref, {margin: "-75% 0px -75% 0px"})
+    // const [isWhite, setIsWhite] = useState(true)
 
-    useEffect(()=>{
+    // useEffect(()=>{
 
-        if(isInView) {
-            setIsWhite(prev=>!prev)
-        }
+    //     if(isInView) {
+    //         setIsWhite(prev=>!prev)
+    //     }
 
 
-    }, [isInView])
+    // }, [isInView])
 
-    console.log(isWhite)
+    // console.log(isWhite)
     
   return (
     <div className='mt-16'>
-       
-       
-
-        {/* <motion.span
-                className={isWhite ? 
-                    "py-16 text-6xl transition-colors text-gray-400" 
-                    : "py-16 text-6xl transition-colors text-white"
-                }
-                ref={ref} 
-            >
-                <h1>
-                Step into an era where AI reshapes the boundaries of what&apos;s possible.
-
-                </h1>
-            </motion.span> */}
 
         {sentences.map((sentence) => (
             <span key={sentence.id}>
@@ -61,6 +48,11 @@ const TitleSection3: React.FC = () => {
             </span>
         ))}
 
+        <Image 
+            className="mt-16"
+            src={waves}
+            alt="transition"
+        />
     </div>
   );
 };

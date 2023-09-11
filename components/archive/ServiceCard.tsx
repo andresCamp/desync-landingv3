@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import GetStartedButton from './buttons/GetStartedButton'
+import GetStartedButton from '../buttons/GetStartedButton'
 
 interface ServiceCardTypes {
     src: string,
