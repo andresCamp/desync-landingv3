@@ -24,7 +24,7 @@ function CalendlyLink() {
   };
 
   return (
-    <a href="" onClick={handleClick}>Let's Talk!</a>
+    <a href="" onClick={handleClick}>Let&apos;s Talk!</a>
   );
 }
 
