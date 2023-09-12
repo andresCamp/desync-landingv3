@@ -1,8 +1,10 @@
 import Navbar from '@/components/Navbar'
+import Navbar2 from '@/components/NavBar2'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Ubuntu, Averia_Serif_Libre } from 'next/font/google'
 import Footer from '@/components/Footer'
+import Footer2 from '@/components/Footer2'
 import { NextUIProvider } from '@nextui-org/react'
 import Providers from './providers'
 
@@ -38,9 +40,11 @@ export default function RootLayout({
     <html lang="en" className={`${ubuntu.variable} ${averia.variable}`}>
         <body >
       <Providers>
-          <Navbar />
+          {/* <Navbar /> */}
+          <Navbar2 />
           {children}
-          <Footer/>
+          <Footer2/>
+          {/* <Footer/> */}
       </Providers>
         </body>
     </html>

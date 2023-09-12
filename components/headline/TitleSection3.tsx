@@ -3,7 +3,7 @@ import { useRef, useEffect, Children, useState } from "react";
 import { motion, useAnimation, useInView, useMotionValueEvent, useScroll } from "framer-motion";
 import TitleLine from "./TitleLine";
 import Image from "next/image";
-import waves from "../../public/waves.svg"
+import waves from "../../public/waves2.svg"
 
 const sentences = [
     {
@@ -40,7 +40,7 @@ const TitleSection3: React.FC = () => {
     // console.log(isWhite)
     
   return (
-    <div className='mt-16'>
+    <div className='mt-16 overflow-hidden'>
 
         {sentences.map((sentence) => (
             <span key={sentence.id}>
@@ -49,7 +49,7 @@ const TitleSection3: React.FC = () => {
         ))}
 
         <Image 
-            className="mt-16"
+            className="w-full mt-32 scale-110 overflow-hidden"
             src={waves}
             alt="transition"
         />

@@ -34,11 +34,11 @@ export default function App() {
       img: "/images/fruit-6.jpeg",
       price: "$8.00",
     },
-    {
-      title: "Data Analysis",
-      img: "/images/fruit-7.jpeg",
-      price: "$7.50",
-    },
+    // {
+    //   title: "Data Analysis",
+    //   img: "/images/fruit-7.jpeg",
+    //   price: "$7.50",
+    // },
   ];
 
   return (

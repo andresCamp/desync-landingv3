@@ -17,6 +17,8 @@ import ServicesSection from '@/components/services/ServicesSection'
 import ServiceTest from '@/components/services/ServiceTest'
 import ServiceTest2 from '@/components/services/ServiceTest2'
 import CalendlyWidget from '@/components/CalendlyWidget'
+import ToolsSection4 from '@/components/ToolsSection4'
+import CTA from '@/components/CTA'
 
 
 
@@ -25,7 +27,7 @@ export default function Home() {
 
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center ">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-[#121212] ">
 
 
       {/* <motion.div animate={{ x: 100 }} /> */}
@@ -36,17 +38,25 @@ export default function Home() {
 
       <TitleSection3 />
 
-      <ToolsSection3 />
+      <ToolsSection4 />
+
+      {/* <ToolsSection3 /> */}
 
       {/* <ToolsSection /> */}
 
       {/* <TitleSection /> */}
 
-      <ServicesSection />
+        <ServicesSection />
 
       {/* <ServiceTest2 /> */}
       
-      <CalendlyWidget />
+      {/* <CalendlyWidget /> */}
+
+
+      <CTA 
+        title='Future-Proof Your Business: Thrive with AI'
+        subtitle=''
+      />
 
 
 

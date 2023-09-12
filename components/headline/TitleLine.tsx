@@ -20,7 +20,7 @@ const TitleLine: React.FC<Props> = ({title, id}) => {
     }, [isInView])
 
     return (
-        <div className='w-3/4 mx-16'>
+        <div className='w-3/4 mx-16 z-40'>
 
 
             {isInit ? 

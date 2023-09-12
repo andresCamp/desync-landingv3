@@ -16,7 +16,7 @@ declare global {
       script.onload = () => {
         window.Calendly.initBadgeWidget({
           url: 'https://calendly.com/d/3b2-hkg-zqs/desync-demo-call?background_color=1a1a1a&text_color=ffffff',
-          text: 'Schedule time with us',
+          text: 'Let&apos;s talk!',
           color: '#0069ff',
           textColor: '#ffffff',
           branding: undefined,

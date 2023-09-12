@@ -23,8 +23,8 @@ input, textarea {
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --background-start-rgb: 18, 18, 18;
+  --background-end-rgb: 18, 18, 18;
   --gradient: linear-gradient(125deg, #89F7FE, #66A6FF);
   /* --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352); */
 }
@@ -37,8 +37,8 @@ input, textarea {
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 18, 18, 18;
+    --background-end-rgb: 18, 18, 18;
   --gradient: linear-gradient(125deg, #89F7FE, #66A6FF);
 
   }
