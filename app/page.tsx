@@ -20,7 +20,9 @@ import CalendlyWidget from '@/components/CalendlyWidget'
 import ToolsSection4 from '@/components/ToolsSection4'
 import CTA from '@/components/CTA'
 import ProductSection from '@/components/product/ProductSection'
-import waves from '../public/waves3.png'
+import waves from '../public/waves3.svg'
+import waves1 from '../public/waves2.svg'
+import ToolsSection6 from '@/components/tools copy/ToolsSection6'
 
 
 
@@ -41,7 +43,13 @@ export default function Home() {
 
       <TitleSection3 />
 
-      <ToolsSection4 />
+      <Image 
+            className="w-full -mb-1"
+            src={waves1}
+            alt="transition"
+        />
+
+      <ToolsSection6 />
 
       {/* <ToolsSection3 /> */}
 
@@ -51,7 +59,7 @@ export default function Home() {
 
 
         <Image 
-            className="w-full top-0"
+            className="w-full "
             src={waves}
             alt="transition"
         />

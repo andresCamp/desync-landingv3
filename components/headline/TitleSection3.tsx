@@ -48,11 +48,7 @@ const TitleSection3: React.FC = () => {
             </span>
         ))}
 
-        <Image 
-            className="w-full mt-16 sm:mt-32 scale-125"
-            src={waves}
-            alt="transition"
-        />
+       
     </div>
   );
 };

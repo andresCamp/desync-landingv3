@@ -9,6 +9,7 @@ import llm from "../../public/services/llm.png"
 import meeting from "../../public/services/meeting.png"
 import prompt from "../../public/services/prompt.png"
 import webdev from "../../public/services/webdev.png"
+import Link from "next/link";
 
 const list = [
   {
@@ -63,7 +64,7 @@ const list = [
 ];
 
 export default function App() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
   
     interface Item {
         title: string;
@@ -98,6 +99,7 @@ export default function App() {
               <p className="text-default-500">click here</p>
               {/* <p className="text-default-500">{item.price}</p> */}
             </CardFooter>
+        
             <Divider className="mx-4" />
             <CardFooter className="text-lg justify-between">
               <p className="text-default-500">{item.liner}</p>
@@ -106,19 +108,19 @@ export default function App() {
         ))}
       </div>
       
-      <Modal isOpen={isOpen} onOpenChange={onOpen}>
+      <Modal backdrop={"opaque"} isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={true}>
         <ModalContent>
-          {() => (
+          {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 text-xl">
                 {activeItem?.title}
               </ModalHeader>
               <ModalBody>
-                <p> 
+                <p className="font-light"> 
                     <span className=" font-bold">Description: </span>
                     {activeItem?.desc}
                 </p>
-                <p>
+                <p className="font-light">
                     <span className=" font-bold">Example: </span>
                     {activeItem?.example}
                 </p>
@@ -128,9 +130,11 @@ export default function App() {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
+                <Link href={"/contact"}>
+                  <Button color="primary">
+                    Book a Call!
+                  </Button>
+                </Link>
               </ModalFooter>
             </>
           )}
