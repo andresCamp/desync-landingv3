@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Card, CardBody, CardFooter } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Card, CardBody, CardFooter, Divider } from "@nextui-org/react";
 import Image from "next/image";
 import img from "../../public/desync-logo-white.png"
 import chatbot from "../../public/services/chatbot.png"
@@ -16,42 +16,42 @@ const list = [
     img: "/services/webdev.png",
     desc: "Revolutionize your web development with our AI-driven solutions.",
     example: "",
-    price: "$5.50",
+    liner: "Your website built faster and smarter with AI.",
   },
   {
     title: "Internal LLM",
     img: "/services/llm.png",
     desc: "Imagine a world where every internal document, from memos to detailed reports, can communicate directly with you.",
     example: "Empower employees to instantly tap into the organization's knowledge base, eliminating the need to sift through lengthy SOPs or rely on colleagues.",
-    price: "$3.00",
+    liner: "Talk to all your documents at once, get answers instantly.",
   },
   {
     title: "Employee Training",
     img: "/services/workshop.png",
     desc: "Our hands-on workshops empower your team to harness the full potential of our technology. Don’t adopt AI for the sake of adopting it. Employee training will make sure everyone knows how to leverage it.",
     example: "ChatGPT, MidJourney Available",
-    price: "$10.00",
+    liner: "Empowering your team to leverage AI effectively.",
   },
   {
     title: "Meeting Analysis",
     img: "/services/meeting.png",
     desc: "Extract key insights in minutes, not hours. Deploy your resources wisely with our world-class data analysis tools. Do more with less. ",
     example: "",
-    price: "$5.30",
+    liner: "Every word analyzed to turn meetings into actionable insights.",
   },
   {
     title: "Chatbot Integration",
     desc: "Elevate your brand with ChatBots that are a cut above the rest. Fueled by next-gen LLM algorithms and fine-tuned using your sales data, they're not just responsive—they're revolutionary.",
     example: "Unlock the era of autonomous, round-the-clock customer support. Instantly connect your visitors with what they are looking for while significantly reducing the time your sales team spends on routine inquiries.",
     img: "/services/chatbot.png",
-    price: "$15.70",
+    liner: "24/7 customer service with perfect knowledge of every product.",
   },
   {
     title: "Ultimate Prompt Library",
     desc: "Imagine having a an expert assistant available to your team for every operational aspect of your business. Our Bespoke Prompt Library offers just that - a series of expertly-designed prompts ranging from content creation to coding, from decision-making to procedural follow-through.",
     example: "Enrich your team's daily operations. With our custom prompts, it's like having a dedicated team of expert assistants, always ready to guide and assist in any challenge.",
     img: "/services/prompt.png",
-    price: "$8.00",
+    liner: "Expert guidance for every business task, just a prompt away.",
   },
   // {
   //   title: "Data Analysis",
@@ -70,7 +70,7 @@ export default function App() {
         img: string;
         desc: string;
         example: string;
-        price: string;
+        liner: string;
     }
     
     const [activeItem, setActiveItem] = React.useState<Item | null>(null);   
@@ -89,6 +89,7 @@ export default function App() {
                 alt={item.title} 
                 width={300}
                 height={250}
+                className="w-full object-cover" 
                 // className="w-full object-cover h-[140px]" 
                 src={item.img} />
             </CardBody>
@@ -96,6 +97,10 @@ export default function App() {
               <b>{item.title}</b>
               <p className="text-default-500">click here</p>
               {/* <p className="text-default-500">{item.price}</p> */}
+            </CardFooter>
+            <Divider className="mx-4" />
+            <CardFooter className="text-lg justify-between">
+              <p className="text-default-500">{item.liner}</p>
             </CardFooter>
           </Card>
         ))}

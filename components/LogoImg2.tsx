@@ -15,7 +15,7 @@ const LogoImg: React.FC<LogoImgTypes> = ({src, alt, isChosen}) => {
   return (
     <div>
       <Image
-            className={`transition  ease-in duration-500 ${isChosen  ? 'filter grayscale-0' : 'filter grayscale'}`}
+            className={`transition hover:shadow-xl  ease-in duration-500 ${isChosen  ? 'filter grayscale-0' : 'filter grayscale'}`}
             src={src}
             width={500}
             height={500}

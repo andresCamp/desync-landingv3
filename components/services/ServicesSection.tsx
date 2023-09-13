@@ -4,7 +4,7 @@ import ServiceTest2 from './ServiceTest2'
 
 const ServicesSection = () => {
   return (
-    <div className='h-screen  snap-center flex flex-col justify-center'>
+    <div className='h-full py-16 px-32 snap-center flex flex-col justify-center'>
       <div className='flex flex-col gap-3 justify-center items-center'>
             <h3 className='text-3xl font-bold '>
                 Our Services

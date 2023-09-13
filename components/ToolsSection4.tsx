@@ -10,6 +10,7 @@ const ToolsSection4 = () => {
         </div>
 
         <div className='w-1/3'>
+            <label className='text-black'>Collaborate with your Team</label>
             <LogoGrid2
                 first='1'
                 second='2'
@@ -17,6 +18,8 @@ const ToolsSection4 = () => {
             />
         </div>
         <div className='w-1/3'>
+        <label className='text-black'>Reach new Customers</label>
+
             <LogoGrid2
                 first='4'
                 second='5'
@@ -24,6 +27,8 @@ const ToolsSection4 = () => {
             />
         </div>
         <div className='w-1/3'>
+        <label className='text-black'>Keep in touch with current Customers</label>
+
             <LogoGrid2
                 first='7'
                 second='8'

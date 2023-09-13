@@ -19,6 +19,7 @@ import ServiceTest2 from '@/components/services/ServiceTest2'
 import CalendlyWidget from '@/components/CalendlyWidget'
 import ToolsSection4 from '@/components/ToolsSection4'
 import CTA from '@/components/CTA'
+import ProductSection from '@/components/product/ProductSection'
 
 
 
@@ -52,6 +53,7 @@ export default function Home() {
       
       {/* <CalendlyWidget /> */}
 
+      <ProductSection/>
 
       <CTA 
         title='Future-Proof Your Business: Thrive with AI'

@@ -2,7 +2,8 @@ import React from 'react'
 import FormsparkEmailCapture from './hero/FormsparkEmailCapture'
 import ParticlesContainer from './ParticlesContainer'
 import Image from 'next/image'
-import img from '../public/smokeBg1.png'
+// import img from '../public/smokeBg1.png'
+import img from '../public/imgBanner1.png'
 import ImageBanner from './ImageBanner'
 
 interface CTAProps {
@@ -15,7 +16,7 @@ const CTA: React.FC<CTAProps> = ({title, subtitle}) => {
   <div className=''>
       <div className='  relative w-full'>
         <Image 
-            className='blur-sm'
+            className='blur-sm w-full'
             src={img}
             alt='desync bg'
         />
