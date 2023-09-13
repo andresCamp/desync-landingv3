@@ -20,6 +20,8 @@ import CalendlyWidget from '@/components/CalendlyWidget'
 import ToolsSection4 from '@/components/ToolsSection4'
 import CTA from '@/components/CTA'
 import ProductSection from '@/components/product/ProductSection'
+import waves from '../public/waves3.png'
+
 
 
 
@@ -47,6 +49,13 @@ export default function Home() {
 
       {/* <TitleSection /> */}
 
+
+        <Image 
+            className="w-full top-0"
+            src={waves}
+            alt="transition"
+        />
+
         <ServicesSection />
 
       {/* <ServiceTest2 /> */}
@@ -55,10 +64,10 @@ export default function Home() {
 
       <ProductSection/>
 
-      <CTA 
+      {/* <CTA 
         title='Future-Proof Your Business: Thrive with AI'
         subtitle=''
-      />
+      /> */}
 
 
 

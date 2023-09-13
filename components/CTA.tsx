@@ -14,10 +14,12 @@ interface CTAProps {
 const CTA: React.FC<CTAProps> = ({title, subtitle}) => {
   return (
   <div className=''>
-      <div className='  relative w-full'>
+      <div className='relative w-full'>
         <Image 
-            className='blur-sm w-full'
+            className=' w-screen blur-sm'
             src={img}
+            width={1000}
+            height={1000}
             alt='desync bg'
         />
 

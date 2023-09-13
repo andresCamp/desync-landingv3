@@ -40,7 +40,7 @@ const TitleSection3: React.FC = () => {
     // console.log(isWhite)
     
   return (
-    <div className='mt-16 overflow-hidden'>
+    <div className='mt-16 relative overflow-x-hidden max-w-full'>
 
         {sentences.map((sentence) => (
             <span key={sentence.id}>
@@ -49,7 +49,7 @@ const TitleSection3: React.FC = () => {
         ))}
 
         <Image 
-            className="w-full mt-32 scale-110 overflow-hidden"
+            className="w-full mt-16 sm:mt-32 scale-125"
             src={waves}
             alt="transition"
         />

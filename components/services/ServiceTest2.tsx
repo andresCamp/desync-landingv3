@@ -78,7 +78,7 @@ export default function App() {
 
   return (
     <>
-      <div className="gap-8 grid grid-cols-2 sm:grid-cols-3">
+      <div className="gap-8 grid grid-cols-1 sm:grid-cols-3">
         {list.map((item, index) => (
           <Card className="hover:brightness-150" shadow="sm" key={index} isPressable onPress={() => {
             setActiveItem(item);

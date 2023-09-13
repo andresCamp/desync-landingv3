@@ -20,12 +20,12 @@ const TitleLine: React.FC<Props> = ({title, id}) => {
     }, [isInView])
 
     return (
-        <div className='w-3/4 mx-16 z-40'>
+        <div className='w-3/4 mx-3 sm:mx-16 z-40'>
 
 
             {isInit ? 
             
-                <motion.span ref={ref} className="py-16 text-6xl transition-colors text-white">
+                <motion.span ref={ref} className="py-16 text-5xl sm:text-6xl transition-colors text-white">
                     <h1>
                         {title}
                     </h1>
@@ -35,8 +35,8 @@ const TitleLine: React.FC<Props> = ({title, id}) => {
                 
                 <motion.span
                     className={isInView ? 
-                        "py-16 text-6xl transition-colors text-white" 
-                        : "py-16 text-6xl transition-colors text-gray-400"
+                        "py-16 text-5xl sm:text-6xl transition-colors text-white" 
+                        : "py-16 text-5xl sm:text-6xl transition-colors text-gray-400"
                     }
                     ref={ref} 
                 >

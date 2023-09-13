@@ -1,6 +1,7 @@
 import React from 'react'
 import LogoGrid2 from './LogoGrid2'
 
+
 const ToolsSection4 = () => {
   return (
     <div className='w-full flex flex-col gap-8 p-8 items-center justify-center bg-white z-10'>
@@ -9,7 +10,7 @@ const ToolsSection4 = () => {
             <h2>Skip the Experiments: We&apos;ve Pre-Tested AI Tools for Your Success</h2>
         </div>
 
-        <div className='w-1/3'>
+        <div className='sm:w-1/3'>
             <label className='text-black'>Collaborate with your Team</label>
             <LogoGrid2
                 first='1'
@@ -17,7 +18,7 @@ const ToolsSection4 = () => {
                 third='3'
             />
         </div>
-        <div className='w-1/3'>
+        <div className='sm:w-1/3'>
         <label className='text-black'>Reach new Customers</label>
 
             <LogoGrid2
@@ -26,7 +27,7 @@ const ToolsSection4 = () => {
                 third='6'
             />
         </div>
-        <div className='w-1/3'>
+        <div className='sm:w-1/3'>
         <label className='text-black'>Keep in touch with current Customers</label>
 
             <LogoGrid2
@@ -35,6 +36,8 @@ const ToolsSection4 = () => {
                 third='9'
             />
         </div>
+
+    
 
     </div>
   )
