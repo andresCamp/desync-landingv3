@@ -40,7 +40,7 @@ const TitleSection3: React.FC = () => {
     // console.log(isWhite)
     
   return (
-    <div className='mt-16 relative overflow-x-hidden max-w-full'>
+    <div className='mt-16 relative overflow-x-hidden h-full max-w-full'>
 
         {sentences.map((sentence) => (
             <span key={sentence.id}>
