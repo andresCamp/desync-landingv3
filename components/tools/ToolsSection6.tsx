@@ -7,17 +7,6 @@ import DetailBox from './DetailBox3';
 const logos: Logo[] = [
   {
       "id": 1, 
-      "name": "Notion",
-      "src": "/homeLogos/desyncLandingLogo4.png", 
-      "link": "https://www.notion.so/",
-      "descLabel": "Common Use-Case: ",
-      "desc": "A rudimentary note-taking app. Most users barely scratch the surface.",
-      "useCaseLabel": "Our Secret Weapon: ",
-      "useCase": "We see an infinitely customizable workspace and have built Notion into a dynamic nerve center interconnecting every aspect of our business. With customized templates, automations, and integrations, our Notion ecosystem grants an omniscient view across teams and projects.",
-      "extra": ""
-  },
-  {
-      "id": 2, 
       "name": "ChatGPT",
       "src": "/homeLogos/desyncLandingLogo24.png", 
       "link": "https://chat.openai.com",
@@ -30,6 +19,17 @@ const logos: Logo[] = [
           "linkText": "ChatGPT outperforms humans on Wharton MBA exam: professor",
           "link": "https://nypost.com/2023/01/23/chatgpt-outperforms-humans-on-wharton-mba-exam-professor/"
       }
+  },
+  {
+      "id": 2, 
+      "name": "Notion",
+      "src": "/homeLogos/desyncLandingLogo4.png", 
+      "link": "https://www.notion.so/",
+      "descLabel": "Common Use-Case: ",
+      "desc": "A rudimentary note-taking app. Most users barely scratch the surface.",
+      "useCaseLabel": "Our Secret Weapon: ",
+      "useCase": "We see an infinitely customizable workspace and have built Notion into a dynamic nerve center interconnecting every aspect of our business. With customized templates, automations, and integrations, our Notion ecosystem grants an omniscient view across teams and projects.",
+      "extra": ""
   },
   {
       "id": 3,
@@ -54,7 +54,18 @@ const logos: Logo[] = [
       "extra": ""
   },
   {
-      "id": 5,
+    "id": 5, 
+    "name": "VenturusAI",
+    "src": "/homeLogos/desyncLandingLogo32.png", 
+    "link": "http://Venturusai.com",
+    "descLabel": "Description: ",
+    "desc": "VenturusAI is your oracle for business success, eliminating guesswork and transforming a single input into a cascade of actionable insights. From SWOT to PESTEL analyses and target audience identification, we do the heavy lifting so you don't have to. Why settle for intuition when you can command the future?",
+    "useCaseLabel": "Why Play Business Roulette? ",
+    "useCase": "Why stress over SWOT or PESTEL? With one click, VenturusAI delivers game-changing insights that'll make you the envy of the boardroom.",
+    "extra": ""
+  },
+  {
+      "id": 6,
       "name": "Make.com",
       "src": "/homeLogos/desyncLandingLogo6.png",
       "link": "https://make.com",
@@ -64,25 +75,14 @@ const logos: Logo[] = [
       "useCase": "Automation will be your weapon of choice as we scrape live data and infuse it into your operations, catapulting your efficiency into overdrive. Prepare for comprehensive processing of tasks, real-time updates that will turn heads, and summaries you no longer have to spend hours on. Welcome to the future of work.",
       "extra": ""
   },
-  {
-    "id": 6, 
-    "name": "VenturusAI",
-    "src": "/homeLogos/desyncLandingLogo13.png", 
-    "link": "http://Venturusai.com",
-    "descLabel": "Description: ",
-    "desc": "VenturusAI is your oracle for business success, eliminating guesswork and transforming a single input into a cascade of actionable insights. From SWOT to PESTEL analyses and target audience identification, we do the heavy lifting so you don't have to. Why settle for intuition when you can command the future?",
-    "useCaseLabel": "Why Play Business Roulette? ",
-    "useCase": "Why stress over SWOT or PESTEL? With one click, VenturusAI delivers game-changing insights that'll make you the envy of the boardroom.",
-    "extra": ""
-}
 ]
 const ToolsSection6 = () => {
   const [selectedLogo, setSelectedLogo] = useState<Logo>(logos[0]);
   console.log(selectedLogo)
 
   return (
-    <div className="flex flex-col items-center sm:px-24 justify-center w-full bg-white p-8 gap-8">
-      <div className="text-2xl font-bold mb-4 text-black">Title</div>
+    <div className="flex flex-col items-center sm:px-24 justify-center w-full bg-white p-8 gap-12">
+      <div className="text-4xl font-bold mb-4 text-black">We&apos;ve tested hundreds of AI tools: Here&apos;s our unfair advantage</div>
       
       <div className="flex flex-col items-center lg:items-start lg:flex-row gap-3 md:gap-8">
         <LogoGrid logos={logos} setSelectedLogo={setSelectedLogo} selectedLogo={selectedLogo} />

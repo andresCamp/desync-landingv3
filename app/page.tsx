@@ -22,7 +22,7 @@ import CTA from '@/components/CTA'
 import ProductSection from '@/components/product/ProductSection'
 import waves from '../public/waves3.svg'
 import waves1 from '../public/waves2.svg'
-import ToolsSection6 from '@/components/tools copy/ToolsSection6'
+import ToolsSection6 from '@/components/tools/ToolsSection6'
 
 
 
