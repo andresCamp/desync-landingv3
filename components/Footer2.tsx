@@ -33,10 +33,7 @@ const Footer = () => {
                 title="London."
                 email="justin@desync.ai"
             /> */}
-            <FooterSection2 
-                title="Mexico City."
-                email="andres@desync.ai"
-            />
+
             <FooterSection2 
                 title="South Bend."
                 email="mark@desync.ai"

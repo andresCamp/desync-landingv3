@@ -11,7 +11,6 @@ export default function NavBar2() {
   const menuItems = [
     "Home",
     "Services",
-    "Meet the Team",
     "Get in Touch",
   ];
 
