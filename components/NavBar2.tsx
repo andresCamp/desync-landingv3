@@ -39,12 +39,7 @@ export default function NavBar2() {
             Services
           </Link>
         </NavbarItem> */}
-        <NavbarItem >
-          <Link href="/team" color="foreground">
-            Meet the Team
-          </Link>
-    
-        </NavbarItem>
+ 
         {/* <NavbarItem>
           <Link color="foreground" href="#">
             Integrations

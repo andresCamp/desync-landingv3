@@ -14,6 +14,7 @@ const ServiceCard = () => {
             <small className="text-default-500">12 Tracks</small>
             <h4 className="font-bold text-large">Frontend Radio</h4>
         </CardHeader>
+        
         <CardBody className="overflow-visible py-2">
             <Image
             alt="Card background"

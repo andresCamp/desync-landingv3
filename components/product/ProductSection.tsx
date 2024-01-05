@@ -26,7 +26,7 @@ const ProductSection = () => {
         // className='w-screen px-8 xl:px-32 grid sm:grid-cols-3 gap-8'
       > */}
         <ProductCard
-          title="EchoNet"
+          title="EchoSync"
           subtitle="Meeting Analysis + Internal LLM"
           src="/echosync.png"
           link="/ecosystem/echosync"

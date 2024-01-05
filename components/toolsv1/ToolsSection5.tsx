@@ -70,7 +70,7 @@ const logos = [
     {
         "id": 3,
         "name": "Claude",
-        "src": "/homeLogos/desyncLandingLogoClaude.png",
+        "src": "/homeLogos/desyncLandingLogo31.png",
         "link": "https://claude.ai",
         "descLabel": "Typical Use: ",
         "desc": "Who would want to use a chat gpt tool with safety features? Someone who understands that it’s context window is 4 times that of chat gpt",
@@ -81,7 +81,7 @@ const logos = [
     {
         "id": 4,
         "name": "Clay.ai",
-        "src": "/homeLogos/desyncLandingLogoClay.png",
+        "src": "/homeLogos/desyncLandingLogo7.png",
         "link": "https://clay.ai",
         "descLabel": "Beyond Basic: ",
         "desc": "Clay.ai isn't just a CRM—it's your secret weapon for hyper-personalized email campaigns.",
@@ -92,7 +92,7 @@ const logos = [
     {
         "id": 5,
         "name": "Make.com",
-        "src": "/homeLogos/desyncLandingLogoMake.png",
+        "src": "/homeLogos/desyncLandingLogo6.png",
         "link": "https://make.com",
         "descLabel": "Average Users: ",
         "desc": "scratch the surface of basic functions, missing enormous potential.",
